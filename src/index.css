@@ -1,0 +1,229 @@
+#root {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+}
+
+.players > div {
+    display: inline-block;
+    border: 3px solid wheat;
+    font-size: 30px;
+    padding: 5px 10px;
+    min-width: 250px;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.game-board {
+    display: inline-block;
+    border: 10px solid #3d0883;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.TicTacToe-Game-board {
+    display: block;
+    border: 10px solid #c90c0c;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+
+}
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row {
+    display: inline-block;
+    max-width: 80px;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
+.Game-info {
+    display: block;
+    position: absolute;
+    bottom: -45%;
+    font-family: 'Comfortaa', cursive;
+}
+.game-status {
+    display: block;
+    padding: 5px;
+    background-color: #fff;
+    border: 5px solid #deb887;
+    width: 55%;
+    max-width: 500px;
+    font-size: 30px;
+    position: absolute;
+    top: 25.5%;
+    left: 23%;
+    z-index: 3;
+    margin: 0 auto;
+}
+
+.SPEED {
+    display: block;
+    font-style: italic;
+}
+
+.time-travel {
+    max-width: 660px;
+    display: block;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.undo {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: none;
+    border: 3px solid #deb887;
+    margin: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+}
+
+.undo.disabled {
+    cursor: not-allowed;
+    opacity: .4;
+}
+
+.board-col {
+    display: inline-block;
+    max-width: 80px;
+}
+
+.square {
+    background: no-repeat #fff;
+    border: none;
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    background-origin: content-box;
+    background-size: contain;
+}
+
+.isActive {
+    background-color: wheat;
+}
+
+.square.movable.player1-move {
+    background-color: #ff6347;
+}
+
+.square.movable.player2-move {
+    background-color: #7fffd4;
+}
+
+.square.player1, .square.player2, .square.movable {
+    cursor: pointer;
+}
+
+.square.black {
+    background-color: #262626;
+}
+
+.square.player1 {
+    background-image: url("img/red-pawn.png");
+}
+.square.player2 {
+    background-image: url("img/blue-pawn.png");
+}
+.square.player1.king {
+    background-image: url("img/red-king.png");
+}
+.square.player2.king {
+    background-image: url("img/blue-king.png");
+}
+
+@media only screen and (max-width: 700px) {
+
+    .board-col {
+        max-width: 60px;
+    }
+    .square {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .board-col {
+        max-width: 50px;
+    }
+    .square {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+
+    .board-col {
+        max-width: 40px;
+    }
+    .square {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .board-col {
+        max-width: 35px;
+    }
+    .square {
+        height: 35px;
+        width: 35px;
+    }
+}
